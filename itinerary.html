@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Itinerary – Japan 2026</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="back-btn">← Home</a>
+    <span class="nav-title">Itinerary</span>
+  </nav>
+
+  <!-- Day tab selector -->
+  <div class="day-tabs-wrap">
+    <div class="day-tabs">
+      <button class="day-tab" data-day="1" onclick="showDay(1, this)">
+        <span class="dn">1</span><span class="dd">10 May</span>
+      </button>
+      <button class="day-tab" data-day="2" onclick="showDay(2, this)">
+        <span class="dn">2</span><span class="dd">11 May</span>
+      </button>
+      <button class="day-tab" data-day="3" onclick="showDay(3, this)">
+        <span class="dn">3</span><span class="dd">12 May</span>
+      </button>
+      <button class="day-tab" data-day="4" onclick="showDay(4, this)">
+        <span class="dn">4</span><span class="dd">13 May</span>
+      </button>
+      <button class="day-tab" data-day="5" onclick="showDay(5, this)">
+        <span class="dn">5</span><span class="dd">14 May</span>
+      </button>
+      <button class="day-tab" data-day="6" onclick="showDay(6, this)">
+        <span class="dn">6</span><span class="dd">15 May</span>
+      </button>
+      <button class="day-tab" data-day="7" onclick="showDay(7, this)">
+        <span class="dn">7</span><span class="dd">16 May</span>
+      </button>
+      <button class="day-tab" data-day="8" onclick="showDay(8, this)">
+        <span class="dn">8</span><span class="dd">17 May</span>
+      </button>
+      <button class="day-tab" data-day="9" onclick="showDay(9, this)">
+        <span class="dn">9</span><span class="dd">18 May</span>
+      </button>
+      <button class="day-tab" data-day="sos" onclick="showDay('sos', this)">
+        <span class="dn">🆘</span><span class="dd">SOS</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="page-wrap">
+
+    <!-- ══════════════════ DAY 1 ══════════════════ -->
+    <div class="day-section" id="day-1">
+      <div class="day-hdr">
+        <h2>Day 1 — Departure &amp; Arrival</h2>
+        <p>Sunday, 10 May 2026 &nbsp;·&nbsp; Kuala Lumpur → Osaka</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Before You Leave</div>
+        <ul>
+          <li>Prepare <strong>MyBorderPass</strong> (Malaysian immigration app)</li>
+          <li>Ensure all 5 passports and documents are ready</li>
+          <li>Charge all phones fully</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Getting to KLIA</div>
+        <ul class="timeline" style="list-style:none; gap:0; margin-bottom:0;">
+          <li class="timeline-item">
+            <span class="timeline-time">04:30</span>
+            <span class="timeline-text"><strong>Grab Premium</strong> departs — estimated RM 100–200</span>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-time">~06:00</span>
+            <span class="timeline-text">Arrive at <strong>KLIA Terminal 1</strong> — Breakfast at airport</span>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-time">08:10</span>
+            <span class="timeline-text">✈️ <strong>Flight CX730</strong> departs (Cathay Pacific) — KLIA → Hong Kong</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Hong Kong Transit (~4 hours)</div>
+        <p>Connecting flight: Cathay Pacific <strong>CX502</strong> (departure time TBC)</p>
+        <p style="margin-top:8px; font-size:16px; color:var(--text-muted);">Stay within the transit area. Follow signs to connecting gate.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Arriving in Japan</div>
+        <ul class="timeline" style="list-style:none; gap:0; margin-bottom:0;">
+          <li class="timeline-item">
+            <span class="timeline-time">21:15 JST</span>
+            <span class="timeline-text">✈️ Arrive at <strong>Kansai International Airport</strong></span>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-time">After landing</span>
+            <span class="timeline-text">Immigration clearance — use QR codes (one per person) → <a href="qr.html" style="color:var(--red); font-weight:700;">Open QR Codes →</a></span>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-time">After immigration</span>
+            <span class="timeline-text">Collect luggage · Activate SIM card</span>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-time">After immigration</span>
+            <span class="timeline-text">Set up <strong>ICOCA card</strong> — top up <strong>¥5,000</strong> (~RM 125) each</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Setting Up ICOCA on iPhone</div>
+        <ul>
+          <li>Open <strong>Wallet</strong> app → Tap <strong>+</strong> (top right)</li>
+          <li>Select <strong>Transit Card</strong> → Search for <strong>ICOCA</strong></li>
+          <li>Top up using <strong>Wise</strong> or another card already in Wallet</li>
+        </ul>
+      </div>
+
+      <div class="note-box">⚠️ <strong>Last train is at 23:55</strong> — do not miss it!</div>
+
+      <div class="transport">
+        <div class="t-mode">Train · Nankai Kuko Line (Purple Line)</div>
+        <div class="t-route">Kansai Airport → Osaka Namba → Hotel</div>
+        <ul>
+          <li>Duration: 56 minutes</li>
+          <li>Exit at: Osaka Namba Station, <strong>Exit 8</strong></li>
+          <li>Walk: 800 m (~15 min) to hotel</li>
+          <li>Last train: 23:55</li>
+        </ul>
+      </div>
+
+      <div class="hotel">
+        <h3>🏨 ESLEAD Hotel Namba Kuromon</h3>
+        <div class="hotel-rows">
+          <div class="hotel-row">
+            <span class="hotel-lbl">Nights</span>
+            <span class="hotel-val">10, 11, 12 May (check out 13 May)</span>
+          </div>
+          <div class="hotel-row">
+            <span class="hotel-lbl">Address</span>
+            <span class="hotel-val">3-8-29 Takatsu, Chuo-ku, Osaka</span>
+          </div>
+          <div class="hotel-row">
+            <span class="hotel-lbl">Phone</span>
+            <span class="hotel-val"><a href="tel:+81803259-3409" style="color:var(--red);font-weight:700;">080-3259-3409</a><br><small style="color:var(--text-muted)">(available 09:00–22:00)</small></span>
+          </div>
+          <div class="hotel-row">
+            <span class="hotel-lbl">Door Code</span>
+            <span class="hotel-val"><span class="password">6891*</span></span>
+          </div>
+          <div class="hotel-row">
+            <span class="hotel-lbl">Booking</span>
+            <span class="hotel-val"><a href="https://www.booking.com/hotel/jp/esuridohoterunan-bo-hei-men.en-gb.html" style="color:var(--red);font-weight:700;" target="_blank">View on Booking.com →</a></span>
+          </div>
+        </div>
+        <hr class="hotel-divider">
+        <div class="note-box" style="margin-bottom:0;">
+          📧 <strong>Action Required:</strong> Register your email before check-in so the hotel can send entry instructions.<br>
+          <a href="https://connect.hotelsmart.jp/register/AAABRITRl-VfpJ7BfdCazUBjvia8IeMMoGQ" style="color:var(--red); font-weight:700; word-break:break-all;">connect.hotelsmart.jp →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Dinner</div>
+        <p>Explore restaurants in the <strong>Kuromon Ichiba</strong> area nearby — plenty of options right outside the hotel.</p>
+      </div>
+    </div>
+
+    <!-- ══════════════════ DAY 2 ══════════════════ -->
+    <div class="day-section" id="day-2">
+      <div class="day-hdr">
+        <h2>Day 2 — Osaka Free Day</h2>
+        <p>Monday, 11 May 2026 &nbsp;·&nbsp; Walking &amp; Shopping</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Suggested Areas</div>
+        <ul>
+          <li><strong>Dotonbori</strong> — neon lights, street food, iconic photo spots</li>
+          <li><strong>Shinsaibashi</strong> — covered shopping arcade</li>
+          <li><strong>Kuromon Ichiba Market</strong> — fresh food market, 5 min from hotel</li>
+          <li><strong>Namba Parks</strong> — shops and rooftop garden</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Getting Around</div>
+        <p>Use your <strong>ICOCA card</strong> to tap in and out of all trains and subways. Just tap the card reader at the gate.</p>
+      </div>
+
+      <div class="hotel">
+        <h3>🏨 ESLEAD Hotel Namba Kuromon</h3>
+        <div class="hotel-rows">
+          <div class="hotel-row">
+            <span class="hotel-lbl">Address</span>
+            <span class="hotel-val">3-8-29 Takatsu, Chuo-ku, Osaka</span>
+          </div>
+          <div class="hotel-row">
+            <span class="hotel-lbl">Phone</span>
+            <span class="hotel-val"><a href="tel:+81803259-3409" style="color:var(--red);font-weight:700;">080-3259-3409</a></span>
+          </div>
+          <div class="hotel-row">
+            <span class="hotel-lbl">Door Code</span>
+            <span class="hotel-val"><span class="password">6891*</span></span>
+          </div>
+          <div class="hotel-row">
+            <span class="hotel-lbl">Booking</span>
+            <span class="hotel-val"><a href="https://www.booking.com/hotel/jp/esuridohoterunan-bo-hei-men.en-gb.html" style="color:var(--red);font-weight:700;" target="_blank">View on Booking.com →</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════ DAY 3 ══════════════════ -->
+    <div class="day-section" id="day-3">
+      <div class="day-hdr">
+        <h2>Day 3 — Universal Studios Japan</h2>
+        <p>Tuesday, 12 May 2026 &nbsp;·&nbsp; Full day at USJ</p>
+      </div>
+
+      <div class="note-box">🎟️ Use your USJ QR ticket at the entrance gate. → <a href="qr.html" style="color:var(--red); font-weight:700;">Open QR Codes →</a></div>
+
+      <div class="transport">
+        <div class="t-mode">Subway + JR Yumesaki Line</div>
+        <div class="t-route">Namba → Universal City Station → USJ</div>
+        <ul>
+          <li>Duration: ~1 hour</li>
+          <li>Tap ICOCA card at the gate</li>
+          <li>Short walk from Universal City Station to USJ entrance</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Tips</div>
+        <ul>
+          <li>Arrive early for popular rides</li>
+          <li>Express passes recommended if purchased in advance</li>
+        </ul>
+      </div>
+
+      <div class="hotel">
+        <h3>🏨 ESLEAD Hotel Namba Kuromon</h3>
+        <div class="hotel-rows">
+          <div class="hotel-row">
+            <span class="hotel-lbl">Address</span>
+            <span class="hotel-val">3-8-29 Takatsu, Chuo-ku, Osaka</span>
+          </div>
+          <div class="hotel-row">
+            <span class="hotel-lbl">Door Code</span>
+            <span class="hotel-val"><span class="password">6891*</span></span>
+          </div>
+          <div class="hotel-row">
+            <span class="hotel-lbl">Booking</span>
+            <span class="hotel-val"><a href="https://www.booking.com/hotel/jp/esuridohoterunan-bo-hei-men.en-gb.html" style="color:var(--red);font-weight:700;" target="_blank">View on Booking.com →</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════ DAY 4 ══════════════════ -->
+    <div class="day-section" id="day-4">
+      <div class="day-hdr">
+        <h2>Day 4 — Osaka → Kyoto</h2>
+        <p>Wednesday, 13 May 2026 &nbsp;·&nbsp; Moving day</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Morning Checklist</div>
+        <ul>
+          <li><strong>Check out by 10:00</strong></li>
+          <li>Leave heavy luggage at hotel lobby — collect before heading to Shin-Osaka</li>
+          <li>Lunch somewhere in Osaka (TBC)</li>
+        </ul>
+      </div>
+
+      <div class="transport">
+        <div class="t-mode">Subway · Midosuji Line (Red Line)</div>
+        <div class="t-route">Hotel → Namba Station (Exit 2) → Shin-Osaka</div>
+        <ul>
+          <li>Exit 2 at Namba → board Midosuji Line northbound</li>
+          <li>Alight at <strong>Shin-Osaka Station</strong></li>
+        </ul>
+      </div>
+
+      <div class="note-box">🎟️ Use your Shinkansen QR code at the gate. → <a href="qr.html" style="color:var(--red); font-weight:700;">Open QR Codes →</a></div>
+
+      <div class="transport">
+        <div class="t-mode">🚅 Shinkansen</div>
+        <div class="t-route">Shin-Osaka → Kyoto Station</div>
+        <ul>
+          <li>Duration: ~20 minutes</li>
+          <li>Flexible departure (trains run every ~20 min)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Kyoto Station → Hotel (Choose One)</div>
+        <div class="options" style="margin-top: 10px; margin-bottom: 0;">
+          <div class="option">
+            <div class="opt-label">Option 1 (Shorter walk)</div>
+            <div class="opt-route">Kyoto Station → Purple Line → Nijo Station</div>
+            <div class="opt-detail">Walk 900 m to hotel</div>
+          </div>
+          <div class="option">
+            <div class="opt-label">Option 2</div>
+            <div class="opt-route">Kyoto Station → Green Line</div>
+            <div class="opt-detail">Walk 1.3 km to hotel</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hotel">
+        <h3>🏨 M's Hotel Sanjo Omiya</h3>
+        <div class="hotel-rows">
+          <div class="hotel-row">
+            <span class="hotel-lbl">Nights</span>
+            <span class="hotel-val">13, 14, 15 May (check out 16 May)</span>
+          </div>
+          <div class="hotel-row">
+            <span class="hotel-lbl">Check-in</span>
+            <span class="hotel-val">16:00</span>
+          </div>
+          <div class="hotel-row">
+            <span class="hotel-lbl">Check-out</span>
+            <span class="hotel-val">10:00</span>
+          </div>
+          <div class="hotel-row">
+            <span class="hotel-lbl">Address</span>
+            <span class="hotel-val">Nakagyo-ku, Aneomiyacho Nishigawa 77-1, Kyoto</span>
+          </div>
+          <div class="hotel-row">
+            <span class="hotel-lbl">Phone</span>
+            <span class="hotel-val"><a href="tel:+81753204213" style="color:var(--red);font-weight:700;">+81 75 320 4213</a></span>
+          </div>
+          <div class="hotel-row">
+            <span class="hotel-lbl">Booking</span>
+            <span class="hotel-val"><a href="https://www.booking.com/hotel/jp/emuzuinsan-tiao-da-gong.en-gb.html" style="color:var(--red);font-weight:700;" target="_blank">View on Booking.com →</a></span>
+          </div>
+        </div>
+        <hr class="hotel-divider">
+        <div class="hotel-rows">
+          <div class="hotel-row">
+            <span class="hotel-lbl">Room 1</span>
+            <span class="hotel-val">2 people — Code: <strong>1554</strong> · Key: <strong>6517E</strong></span>
+          </div>
+          <div class="hotel-row">
+            <span class="hotel-lbl">Room 2</span>
+            <span class="hotel-val">3 people — Code: <strong>5932</strong> · Key: <strong>6517E</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════ DAY 5 ══════════════════ -->
+    <div class="day-section" id="day-5">
+      <div class="day-hdr">
+        <h2>Day 5 — Kyoto Old Town</h2>
+        <p>Thursday, 14 May 2026 &nbsp;·&nbsp; History &amp; Culture</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Suggested Spots</div>
+        <ul>
+          <li><strong>Yasaka Shrine</strong> — free entry, beautiful traditional architecture in Gion</li>
+          <li><strong>Nishiki Market</strong> — narrow covered market, "Kyoto's Kitchen"</li>
+          <li><strong>Teramachi Street</strong> — shopping arcade with local crafts</li>
+          <li><strong>Gion Area</strong> — Kyoto's historic geisha district</li>
+          <li><strong>Higashiyama Streets</strong> — preserved old-town lanes</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Getting Around</div>
+        <p>Most of the old town is walkable. Use the ICOCA card for bus rides between areas.</p>
+      </div>
+
+      <div class="hotel">
+        <h3>🏨 M's Hotel Sanjo Omiya</h3>
+        <div class="hotel-rows">
+          <div class="hotel-row">
+            <span class="hotel-lbl">Phone</span>
+            <span class="hotel-val"><a href="tel:+81753204213" style="color:var(--red);font-weight:700;">+81 75 320 4213</a></span>
+          </div>
+          <div class="hotel-row">
+            <span class="hotel-lbl">Room 1</span>
+            <span class="hotel-val">Code: <strong>1554</strong> · Key: <strong>6517E</strong></span>
+          </div>
+          <div class="hotel-row">
+            <span class="hotel-lbl">Room 2</span>
+            <span class="hotel-val">Code: <strong>5932</strong> · Key: <strong>6517E</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════ DAY 6 ══════════════════ -->
+    <div class="day-section" id="day-6">
+      <div class="day-hdr">
+        <h2>Day 6 — Kyoto Free Day</h2>
+        <p>Friday, 15 May 2026 &nbsp;·&nbsp; Plan TBC</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Possible Ideas</div>
+        <ul>
+          <li><strong>Fushimi Inari</strong> — thousands of torii gates on a mountain trail</li>
+          <li><strong>Arashiyama</strong> — bamboo forest and Tenryu-ji garden</li>
+          <li><strong>Kiyomizu-dera</strong> — iconic wooden stage temple on a hillside</li>
+          <li><strong>Uji Day Trip</strong> — matcha capital, Byodoin temple (~30 min from Kyoto)</li>
+        </ul>
+      </div>
+
+      <div class="hotel">
+        <h3>🏨 M's Hotel Sanjo Omiya</h3>
+        <div class="hotel-rows">
+          <div class="hotel-row">
+            <span class="hotel-lbl">Phone</span>
+            <span class="hotel-val"><a href="tel:+81753204213" style="color:var(--red);font-weight:700;">+81 75 320 4213</a></span>
+          </div>
+          <div class="hotel-row">
+            <span class="hotel-lbl">Room 1</span>
+            <span class="hotel-val">Code: <strong>1554</strong> · Key: <strong>6517E</strong></span>
+          </div>
+          <div class="hotel-row">
+            <span class="hotel-lbl">Room 2</span>
+            <span class="hotel-val">Code: <strong>5932</strong> · Key: <strong>6517E</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════ DAY 7 ══════════════════ -->
+    <div class="day-section" id="day-7">
+      <div class="day-hdr">
+        <h2>Day 7 — Amanohashidate &amp; Back to Osaka</h2>
+        <p>Saturday, 16 May 2026 &nbsp;·&nbsp; Day trip + Moving day</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Morning Checklist</div>
+        <ul>
+          <li><strong>Check out</strong> from M's Hotel Sanjo Omiya</li>
+          <li>Arrive at <strong>Kyoto Station Hachijo East Exit</strong> by <strong>09:00</strong></li>
+          <li>Take <strong>Uber</strong> from hotel — ~¥2,500 (~RM 60)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Amanohashidate</div>
+        <p>One of Japan's three famous views — a scenic sandbar stretching across the sea. Cable car and bay cruise included.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Evening Return to Osaka</div>
+        <ul>
+          <li>Estimated arrival: <strong>Nipponbashi Station, Osaka</strong> at 18:30–19:30</li>
+          <li>Walk 5–10 minutes to hotel</li>
+        </ul>
+      </div>
+
+      <div class="hotel">
+        <h3>🏨 MA House 402</h3>
+        <div class="hotel-rows">
+          <div class="hotel-row">
+            <span class="hotel-lbl">Nights</span>
+            <span class="hotel-val">16, 17 May (check out 18 May)</span>
+          </div>
+          <div class="hotel-row">
+            <span class="hotel-lbl">Check-in</span>
+            <span class="hotel-val">16:00</span>
+          </div>
+          <div class="hotel-row">
+            <span class="hotel-lbl">Check-out</span>
+            <span class="hotel-val">10:00 (last day 11:00)</span>
+          </div>
+          <div class="hotel-row">
+            <span class="hotel-lbl">Address</span>
+            <span class="hotel-val">中央区高津 2-6-12 リバーウッド 402, Osaka</span>
+          </div>
+          <div class="hotel-row">
+            <span class="hotel-lbl">Phone</span>
+            <span class="hotel-val">TBC — refer to booking confirmation email</span>
+          </div>
+          <div class="hotel-row">
+            <span class="hotel-lbl">Booking</span>
+            <span class="hotel-val"><a href="https://www.booking.com/hotel/jp/mahouse-402.en-gb.html" style="color:var(--red);font-weight:700;" target="_blank">View on Booking.com →</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════ DAY 8 ══════════════════ -->
+    <div class="day-section" id="day-8">
+      <div class="day-hdr">
+        <h2>Day 8 — Osaka Free Day</h2>
+        <p>Sunday, 17 May 2026 &nbsp;·&nbsp; Plan TBC</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Possible Ideas</div>
+        <ul>
+          <li><strong>Osaka Castle</strong> — iconic landmark with a history museum inside</li>
+          <li><strong>Shinsekai</strong> — retro neighbourhood, famous for kushikatsu skewers</li>
+          <li><strong>Den Den Town</strong> — electronics &amp; anime shopping near the hotel</li>
+          <li><strong>Tennoji Zoo &amp; Park</strong> — great for a relaxed day</li>
+        </ul>
+      </div>
+
+      <div class="note-box">📦 Tonight is the <strong>last night</strong>. Pack bags tonight ready for tomorrow's early departure to the airport.</div>
+
+      <div class="hotel">
+        <h3>🏨 MA House 402</h3>
+        <div class="hotel-rows">
+          <div class="hotel-row">
+            <span class="hotel-lbl">Address</span>
+            <span class="hotel-val">中央区高津 2-6-12 リバーウッド 402, Osaka</span>
+          </div>
+          <div class="hotel-row">
+            <span class="hotel-lbl">Phone</span>
+            <span class="hotel-val">TBC</span>
+          </div>
+          <div class="hotel-row">
+            <span class="hotel-lbl">Booking</span>
+            <span class="hotel-val"><a href="https://www.booking.com/hotel/jp/mahouse-402.en-gb.html" style="color:var(--red);font-weight:700;" target="_blank">View on Booking.com →</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════ DAY 9 ══════════════════ -->
+    <div class="day-section" id="day-9">
+      <div class="day-hdr">
+        <h2>Day 9 — Return Flight</h2>
+        <p>Monday, 18 May 2026 &nbsp;·&nbsp; Osaka → KL</p>
+      </div>
+
+      <div class="note-box">⚠️ Flight departs at <strong>09:45 JST</strong> — leave the hotel very early (around 07:00) to reach Kansai Airport in time.</div>
+
+      <div class="card">
+        <div class="card-title">Morning Checklist</div>
+        <ul>
+          <li>Pack all bags the night before</li>
+          <li>Check out of MA House 402 (formal checkout time: 11:00, but depart early for flight)</li>
+          <li>Head to Kansai Airport — allow 1+ hour travel time</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Departure Flight</div>
+        <ul class="timeline" style="list-style:none; gap:0; margin-bottom:0;">
+          <li class="timeline-item">
+            <span class="timeline-time">09:45 JST</span>
+            <span class="timeline-text">✈️ <strong>Flight CX503</strong> departs (Cathay Pacific) — Kansai → Hong Kong</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Hong Kong Transit (~4 hours)</div>
+        <p>Connecting flight: Cathay Pacific <strong>CX729</strong> (departure time TBC)</p>
+        <p style="margin-top:8px; font-size:16px; color:var(--text-muted);">Light meal, rest, confirm departure gate.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Arriving Home</div>
+        <ul class="timeline" style="list-style:none; gap:0; margin-bottom:0;">
+          <li class="timeline-item">
+            <span class="timeline-time">22:10 MYT</span>
+            <span class="timeline-text">✈️ Land at <strong>KLIA</strong> — Welcome home! 🎉</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ══════════════════ EMERGENCY CONTACTS ══════════════════ -->
+    <div class="day-section" id="day-sos">
+      <div class="day-hdr">
+        <h2>🆘 Emergency Contacts</h2>
+        <p>Important numbers for the trip</p>
+      </div>
+
+      <div class="emerg-section">
+        <h4>Japan Emergency Services</h4>
+        <table class="emerg-table">
+          <tr>
+            <td>Police</td>
+            <td><a href="tel:110" style="color:var(--red);text-decoration:none;"><span class="emerg-big">110</span></a></td>
+          </tr>
+          <tr>
+            <td>Ambulance / Fire</td>
+            <td><a href="tel:119" style="color:var(--red);text-decoration:none;"><span class="emerg-big">119</span></a></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Hotel Contacts</div>
+        <table style="width:100%; border-collapse:collapse; font-size:17px;">
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:8px 4px; font-weight:600;">ESLEAD Hotel (Osaka)</td>
+            <td style="padding:8px 4px;"><a href="tel:+81803259-3409" style="color:var(--red);font-weight:700;">080-3259-3409</a></td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:8px 4px; font-weight:600;">M's Hotel (Kyoto)</td>
+            <td style="padding:8px 4px;"><a href="tel:+81753204213" style="color:var(--red);font-weight:700;">+81 75 320 4213</a></td>
+          </tr>
+          <tr>
+            <td style="padding:8px 4px; font-weight:600;">MA House 402 (Osaka)</td>
+            <td style="padding:8px 4px;">TBC</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Airline</div>
+        <table style="width:100%; border-collapse:collapse; font-size:17px;">
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:8px 4px; font-weight:600;">Cathay Pacific (Malaysia)</td>
+            <td style="padding:8px 4px;"><a href="tel:+60327885000" style="color:var(--red);font-weight:700;">+60 3 2788 5000</a></td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:8px 4px; font-weight:600;">Outbound flights</td>
+            <td style="padding:8px 4px;">CX730 → CX502</td>
+          </tr>
+          <tr>
+            <td style="padding:8px 4px; font-weight:600;">Return flights</td>
+            <td style="padding:8px 4px;">CX503 → CX729</td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+
+  </div><!-- /page-wrap -->
+
+  <script>
+    function showDay(dayId, btn) {
+      // Hide all day sections
+      document.querySelectorAll('.day-section').forEach(function(s) {
+        s.classList.remove('active');
+      });
+      // Deactivate all tabs
+      document.querySelectorAll('.day-tab').forEach(function(t) {
+        t.classList.remove('active');
+      });
+      // Show selected
+      var section = document.getElementById('day-' + dayId);
+      if (section) section.classList.add('active');
+      btn.classList.add('active');
+
+      // Scroll tab into view
+      btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    }
+
+    // Show Day 1 on load
+    document.addEventListener('DOMContentLoaded', function() {
+      var firstTab = document.querySelector('.day-tab[data-day="1"]');
+      if (firstTab) showDay(1, firstTab);
+    });
+  </script>
+
+</body>
+</html>
