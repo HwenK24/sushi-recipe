@@ -256,8 +256,21 @@ button { font-family: inherit; }
   margin-bottom: 12px;
 }
 .card ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
-.card li { display: flex; gap: 10px; font-size: 17px; line-height: 1.45; }
-.card li::before { content: '•'; color: var(--red); font-weight: bold; flex-shrink: 0; }
+.card li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.card li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--red);
+  font-weight: bold;
+}
 .card p { font-size: 17px; line-height: 1.65; }
 
 /* ─── TRANSPORT ─── */
