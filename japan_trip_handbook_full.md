@@ -56,17 +56,26 @@ Grab to KLIA Terminal 1
 
 ### Flight Details
 
-#### Flight 1
+#### Flight 1 — KLIA → Hong Kong
 
 08:10 (MYT) -- Departure\
 Airline: Cathay Pacific\
-Flight Number: CX730
+Flight Number: CX730\
+Flight Duration: 4h 30m\
+12:20 (HKT) -- Arrive at Hong Kong International Airport
 
 ### Transit --- Hong Kong
 
--   Transit Duration: 4 hours
+-   Transit Duration: 4h 10m
 -   Next Flight: CX502
--   Departure Time: TBD
+-   Departure Time: 16:30 (HKT)
+
+#### Flight 2 — Hong Kong → Osaka
+
+16:30 (HKT) -- Departure\
+Airline: Cathay Pacific\
+Flight Number: CX502\
+Flight Duration: 3h 45m\
 
 ### Arrival in Japan
 
@@ -239,31 +248,40 @@ Checkout by 11:00
 
 ### Returning Flight
 
+#### Flight 1 — Osaka → Hong Kong
+
 09:45 (JST) -- Departure\
 Airline: Cathay Pacific\
-Flight Number: CX503
+Flight Number: CX503\
+Flight Duration: 4h 20m\
+13:05 (HKT) -- Arrive at Hong Kong International Airport
 
 ### Transit --- Hong Kong
 
--   Transit Duration: 4 hours
+-   Transit Duration: 3h 50m
 -   Next Flight: CX729
--   Departure Time: TBD
+-   Departure Time: 16:55 (HKT)
 
 What to do: - Confirm departure gate - Light meal/snack - Rest before
 final flight
 
+#### Flight 2 — Hong Kong → KLIA
+
+16:55 (HKT) -- Departure\
+Airline: Cathay Pacific\
+Flight Number: CX729
+Flight Duration: 4h\
+
 ### Final Arrival
 
-22:10 (MYT) -- Arrival back in Malaysia
+20:55 (MYT) -- Arrival back in Malaysia at KLIA
 
 ------------------------------------------------------------------------
 
 # Pending Information To Fill
 
--   Hong Kong transit departure times
 -   Day 1 dinner recommendations
 -   Day 4 lunch plan
 -   Day 6 Kyoto final plan
 -   Day 8 Osaka final plan
 -   MA House phone number
--   Return transit details

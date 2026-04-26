@@ -353,6 +353,95 @@ button { font-family: inherit; }
 .timeline-time { font-weight: 700; color: var(--red); min-width: 80px; flex-shrink: 0; }
 .timeline-text { flex: 1; line-height: 1.45; }
 
+/* ─── PHRASEBOOK ─── */
+.phrase-list { display: flex; flex-direction: column; }
+.phrase-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px 12px;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+.phrase-row:last-child { border-bottom: none; padding-bottom: 0; }
+.phrase-row:first-child { padding-top: 0; }
+.phrase-jp { font-size: 17px; font-weight: 700; margin-bottom: 2px; }
+.phrase-rom { font-size: 13px; color: var(--text-muted); font-style: italic; }
+.phrase-en {
+  font-size: 14px; color: var(--text-muted); font-weight: 600;
+  text-align: right; white-space: nowrap;
+}
+
+/* ─── JOURNEY FLIGHT TIMELINE ─── */
+.journey {
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  padding: 18px 20px 10px;
+  margin-bottom: 14px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+}
+.journey-title {
+  font-size: 13px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.6px; color: var(--red); margin-bottom: 16px;
+}
+.jstep {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  column-gap: 12px;
+}
+.jstep-track {
+  display: flex; flex-direction: column; align-items: center; padding-top: 13px;
+}
+.jstep-dot {
+  width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0;
+}
+.jstep-dot.depart  { background: var(--red);    box-shadow: 0 0 0 3px rgba(200,16,46,0.18); }
+.jstep-dot.transit { background: #d97706;        box-shadow: 0 0 0 3px rgba(217,119,6,0.18); }
+.jstep-dot.arrive  { background: #059669;        box-shadow: 0 0 0 3px rgba(5,150,105,0.18); }
+.jstep-tail { flex: 1; width: 2px; background: #d1d5db; margin-top: 6px; }
+.jstep-body { display: flex; flex-direction: column; }
+.jstep-card {
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  border-left-width: 4px;
+}
+.jstep-card.depart  { background: #fff5f6; border-color: #ffd0d6; border-left-color: var(--red); }
+.jstep-card.transit { background: #fffbeb; border-color: #fde68a; border-left-color: #d97706; }
+.jstep-card.arrive  { background: #f0fdf4; border-color: #a7f3d0; border-left-color: #059669; }
+.jstep-tag {
+  font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.9px; margin-bottom: 4px;
+}
+.jstep-card.depart  .jstep-tag { color: var(--red); }
+.jstep-card.transit .jstep-tag { color: #b45309; }
+.jstep-card.arrive  .jstep-tag { color: #065f46; }
+.jstep-time {
+  font-size: 22px; font-weight: 900; color: var(--text);
+  font-variant-numeric: tabular-nums; line-height: 1.1; margin-bottom: 3px;
+}
+.jstep-tz { font-size: 13px; font-weight: 600; color: var(--text-muted); }
+.jstep-place { font-size: 15px; font-weight: 700; margin-bottom: 1px; }
+.jstep-airport { font-size: 13px; color: var(--text-muted); line-height: 1.4; }
+.jstep-flight {
+  display: inline-block; background: rgba(200,16,46,0.10); color: var(--red-dark);
+  font-size: 12px; font-weight: 700; padding: 2px 9px; border-radius: 10px; margin-top: 7px;
+}
+.jstep-layover {
+  display: inline-block; background: rgba(217,119,6,0.12); color: #92400e;
+  font-size: 12px; font-weight: 700; padding: 2px 9px; border-radius: 10px; margin-top: 7px;
+}
+.jstep-next { font-size: 13px; color: var(--text-muted); margin-top: 5px; }
+.jstep-connector {
+  display: flex; align-items: center; padding: 7px 0 9px;
+}
+.jstep-pill {
+  display: inline-flex; align-items: center; gap: 5px;
+  background: var(--bg); border: 1px solid var(--border);
+  border-radius: 20px; padding: 4px 14px;
+  font-size: 13px; font-weight: 600; color: var(--text-muted);
+}
+
 /* ─── EMERGENCY CONTACTS ─── */
 .emerg-section {
   background: #fff5f5;
