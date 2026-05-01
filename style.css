@@ -155,30 +155,6 @@ button { font-family: inherit; }
 .chevron { font-size: 16px; transition: transform 0.2s; flex-shrink: 0; }
 .person-btn.active .chevron { transform: rotate(180deg); }
 
-.qr-display {
-  display: none;
-  background: var(--white);
-  border: 2px solid var(--red);
-  border-top: none;
-  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
-  padding: 20px 16px 16px;
-}
-.qr-display.visible { display: block; }
-.qr-display img {
-  width: 100%;
-  max-width: 340px;
-  display: block;
-  margin: 0 auto;
-  border-radius: 8px;
-  border: 1px solid var(--border);
-}
-.qr-label {
-  text-align: center;
-  font-size: 15px;
-  color: var(--text-muted);
-  margin-top: 10px;
-}
-
 /* ─── PLACEHOLDER ─── */
 .placeholder-box {
   margin: 10px 20px 8px;
